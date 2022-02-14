@@ -1,7 +1,11 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Montserrat', sans-serif;
+*,
+::before,
+::after
+{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : 'Montserrat', sans-serif;
 }
 
 :root{
@@ -13,6 +17,10 @@
     --clr-pembatas-3 : #CDEEF8;
 
     --text-color : #3F3F3F;
+}
+
+a:visited{
+    color : rgb(255, 255, 255);
 }
 
 /* Header */
@@ -39,6 +47,10 @@ li{
 
 button{
     cursor : pointer;
+}
+
+.current-page{
+    color : var(--clr-pembatas-2);
 }
 
 .header-logo{
@@ -68,7 +80,7 @@ button{
 
 .header-nav ul{
     display : flex;
-    font-size : 13px;
+    font-size : 15px;
     /* background-color: pink; */
     justify-content : space-around;
     width : 90%;
