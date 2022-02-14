@@ -17,14 +17,14 @@
         <h3 class="header-name">WIJAYA STORE</h3>
         <nav class="header-nav">
             <ul>
-                <li>Halaman Utama</li>
-                <li>Kategori</li>
-                <li>Promo</li>
-                <li>Tentang</li>
+                <li class="current-page">Halaman Utama</li>
+                <li><a href="../HalamanKategori/kategori.html">Kategori</a></li>
+                <li><a href="#">Keranjang</a></li>
+                <li><a href="#">Tentang</a></li>
             </ul>
         </nav>
-        <button class="btn btn-masuk">Masuk</button>
-        <button class="btn btn-daftar">Daftar</button>
+        <button class="btn btn-masuk" onClick="location.href= '../MasukPage/Masuk.html'">Masuk</button>
+        <button class="btn btn-daftar" onClick="location.href='../DaftarPage/Daftar.html'">Daftar</button>
         <form class="header-cari">
             <input type="text" placeholder="Cari disini...">
             <button>CARI</button>
@@ -123,8 +123,65 @@
             </div>
         </div>
     </main>
+
+    <div class="pembatas"></div>
     <footer>
-        <div>LOL ITS FOOTER</div>
+        <div class="footer-container">
+            <ul>
+                <li class="footer-title">WIJAYA STORE</li>
+                <li>Tentang Wijaya Store</li>
+                <li>Hak Kekayaan Intelektual</li>
+                <li>Karir</li>
+                <li>Blog</li>
+                <li>Bridestory</li>
+                <li>Mitra Blog</li>
+                <li>Mitra Wijaya Store</li>
+            </ul>
+            <ul>
+                <li class="footer-title">LAYANAN PELANGGAN</li>
+                <li>Bantuan</li>
+                <li>Metode Pembayaran</li>
+                <li>Gratis Ongkir</li>
+                <li>Lacak Pesanan Pembeli</li>
+                <li>Lacak Pengiriman Penjual</li>
+                <li>Pengembalian Barang & Dana</li>
+                <li>Garansi</li>
+                <li>Hubungi Kami</li>
+            </ul>
+            <ul class="media-sosial">
+                <li class="footer-title">MEDIA SOSIAL</li>
+                <li>
+                    <img src="images/facebook-logo.png" alt="facebook" class="footer-images">
+                    <span>Facebook</span>
+                </li>
+                <li>
+                    <img src="images/instagram-logo.png" alt="instagram" class="footer-images">
+                    <span>Instagram</span>
+                </li>
+                <li>
+                    <img src="images/twitter-logo.png" alt="twitter" class="footer-images">
+                    <span>Twitter</span>
+                </li>
+                <li>
+                    <img src="images/whatsapp-logo.png" alt="images" class="footer-images">
+                    <span>WhatsApp</span>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="copyright-left">
+                <span>© Copyright Wijaya Store</span>
+                <span>Official Website of Wijaya Store</span>
+            </div>
+            <ul>
+                <li>Legal Terms</li> |
+                <li>Privacy Policy</li> |
+                <li>Cookies</li> |
+                <li>Accessibility</li> |
+                <li>Contact Us</li> |
+                <li>Support/FAQs</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
