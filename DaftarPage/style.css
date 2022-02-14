@@ -55,6 +55,7 @@ body{
     background-color: white;
     height: 90%;
     width: 90%;
+    max-height: fit-content;
     margin: auto;
     border-radius: 64px;
     overflow-x: hidden;
