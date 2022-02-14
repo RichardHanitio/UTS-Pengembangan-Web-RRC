@@ -157,6 +157,11 @@ button{
     margin : 20px auto;
 }
 
+.penawaran-lists img{
+    width : 115px;
+    height: 150px;
+}
+
 .penawaran-list{
     background-color : rgb(239, 239, 239);
     border-radius : 10px;
