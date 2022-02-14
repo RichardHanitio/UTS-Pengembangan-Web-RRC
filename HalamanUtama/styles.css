@@ -87,7 +87,7 @@ button{
 
 .header-nav ul{
     display : flex;
-    font-size : 13px;
+    font-size : 15px;
     /* background-color: pink; */
     justify-content : space-around;
     width : 90%;
@@ -190,17 +190,18 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    cursor : pointer;
 }
 
 .kategori-image{
-    width : 115px;
+    width : 125px;
 }
 
 .kategori-caption{
     text-align: center;
     font-weight: 500;
     margin-bottom : 15px;
-    font-size : 18px;
+    font-size : 20px;
 }
 
 .penawaran-title{
@@ -223,6 +224,7 @@ main{
     display : flex;
     flex-direction: column;
     margin-top : 15px;
+    cursor : pointer;
 }
 
 .penawaran-image{
@@ -237,7 +239,7 @@ main{
 }
 
 .penawaran-kategori{
-    font-size : 10px;
+    font-size : 12px;
 }
 
 .penawaran-harga{
@@ -246,7 +248,7 @@ main{
 }
 
 .penawaran-discount{
-    font-size : 12px;
+    font-size : 14px;
     margin-top : 10px;
 }
 .penawaran-discount span:first-child{
@@ -258,10 +260,10 @@ main{
 }
 .penawaran-discount span:last-child{
     text-decoration: line-through;
-    font-size : 10px;
+    font-size : 12px;
 }
 .penawaran-stok{
-    font-size : 12px;
+    font-size : 14px;
     margin-top : 10px;
     font-weight : 700;
     margin-bottom : 12px;
@@ -294,7 +296,7 @@ footer{
     height : 100%;
     background-color : var(--clr-primary-1);
     line-height : 2.3;
-    font-size : 13px;
+    font-size : 15px;
 }
 
 .footer-container{
