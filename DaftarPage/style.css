@@ -5,6 +5,7 @@
 }
 
 body{
+    width: 100%;
     height: 100vh;
     background-image: linear-gradient(#000046,#1CB5E0);
     display: flex;
@@ -54,6 +55,7 @@ body{
     background-color: white;
     height: 90%;
     width: 90%;
+    max-height: fit-content;
     margin: auto;
     border-radius: 64px;
     overflow-x: hidden;
