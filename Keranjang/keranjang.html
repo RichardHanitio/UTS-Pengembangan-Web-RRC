@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../ImageBank/logo.png">
+    <title>Wijaya Store | Keranjang</title>
+    <link rel="stylesheet" href="keranjang.css">
+</head>
+<body>
+    <header>
+        <img src="../ImageBank/logo.png" alt="" class="header-logo">
+        <h3 class="header-name">WIJAYA STORE</h3>
+        <nav class="header-nav">
+            <ul>
+                <li>Halaman Utama</li>
+                <li><a href="../HalamanKategori/kategori.html">Kategori</a></li>
+                <li><a href="../Keranjang/keranjang.html" class="current-page">Keranjang</a></li>
+                <li><a href="">Tentang</a></li>
+            </ul>
+        </nav>
+        <button class="btn btn-masuk" onClick="location.href= '../MasukPage/Masuk.html'">Masuk</button>
+        <button class="btn btn-daftar" onClick="location.href='../DaftarPage/Daftar.html'">Daftar</button>
+        <form class="header-cari">
+            <input type="text" placeholder="Cari disini...">
+            <button>CARI</button>
+        </form>
+    </header>
+    <div class="pembatas"></div>
+
+    <main>
+        <h1 class="main-title">Keranjang</h1>
+        <div class="main-contents">
+            <div class="keranjang-items">
+                <div class="keranjang-item">
+                    <input type="checkbox" class="keranjang-checkbox">
+                    <img src="../ImageBank/kantor.png" alt="" class="produk-gambar">
+                    <div class="produk-profile">
+                        <div class="produk-profile-atas">
+                            <div class="produk-nama">Xiaomi Poco X3 Pro</div>
+                            <div class="produk-tipe">Handphone</div>
+                            <div class="produk-harga">Rp4.059.000</div>
+                            <div class="produk-diskon">
+                                <span>50%</span>
+                                <span>Rp8.118.000</span>
+                            </div>
+                        </div>
+                        <div class="produk-stok">Sisa stock barang : 5</div>
+                    </div>
+                    <div class="produk-deskripsi">
+                        <div>Deskripsi :</div>
+                        <div>Put your product description here</div>
+                    </div>
+                </div>
+                <div class="keranjang-item">
+                    <input type="checkbox" class="keranjang-checkbox">
+                    <img src="../ImageBank/kantor.png" alt="" class="produk-gambar">
+                    <div class="produk-profile">
+                        <div class="produk-profile-atas">
+                            <div class="produk-nama">Xiaomi Poco X3 Pro</div>
+                            <div class="produk-tipe">Handphone</div>
+                            <div class="produk-harga">Rp4.059.000</div>
+                            <div class="produk-diskon">
+                                <span>50%</span>
+                                <span>Rp8.118.000</span>
+                            </div>
+                        </div>
+                        <div class="produk-amount">
+                        </div>
+                    </div>
+                    <div class="produk-deskripsi">
+                        <div>Deskripsi :</div>
+                        <div>Put your product description here</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="keranjang-bayar">
+                <h2>Pembelian</h2>
+                <div>
+                    <div>Total Harga (0 Barang)</div>
+                    <div class="harga">Rp0</div>
+                </div>
+                <div>
+                    <div>Total Harga (0 Barang)</div>
+                    <div class="harga">Rp0</div>
+                </div>
+                <div class="grand-total">
+                    <span>Total</span>
+                    <span>Rp.0</span>
+                </div>
+                <button class="keranjang-beli">Beli (0)</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

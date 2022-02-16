@@ -151,197 +151,141 @@ button{
     z-index : 1;
 }
 
-.hero-image{
-    width : 100%;
+body{
+     background-image : linear-gradient(to bottom, var(--clr-primary-1), var(--clr-primary-2));
 }
 
-/* main */
 main{
-    height : 260vh;
-    background-image : linear-gradient(to bottom, var(--clr-primary-1), var(--clr-primary-2));
-}
-
-.kategori{
-    width : 80vw;
-    height : 100vh;
-    margin : 10px auto;
-}
-
-.kategori-lists{
-    display : grid;
+    height : 100%;
+    width : 100%;
     color : var(--text-color);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap : 30px;
-    width : 70%;
-    height : 70%;
-    /* background-color : pink; */
+    height : 100vh;
+    width : 90vw;
+    background-color : rgb(255, 255, 255);
     margin : 0 auto;
 }
 
-.kategori-title{
-    /* background-color: yellow; */
-    text-align: center;
-    margin-bottom : 30px;
-}
-
-.kategori-list{
-    background-color: rgb(255, 255, 255);
-    border-radius : 20px;
-    display : flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    cursor : pointer;
-}
-
-.kategori-image{
-    width : 125px;
-}
-
-.kategori-caption{
-    text-align: center;
-    font-weight: 500;
-    margin-bottom : 15px;
-    font-size : 20px;
-}
-
-.penawaran-title{
+.main-title{
+    margin : 30px 0;
     text-align : center;
+    padding-top : 25px;
 }
 
-.penawaran-lists{
-    display : grid;
-    color : var(--text-color);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap : 40px;
-    width : 70%;
-    height : 70%;
-    margin : 20px auto;
-}
-
-.penawaran-list{
-    background-color : rgb(239, 239, 239);
-    border-radius : 10px;
+.keranjang-items{
+    background-color : #E7E7E7;
     display : flex;
-    flex-direction: column;
-    margin-top : 15px;
-    cursor : pointer;
+    flex-direction : column;
+    align-items : center;
+    justify-content : space-around;
+    width : 70%;
+    height : 100%;
 }
 
-.penawaran-image{
-    align-self : center;
-    width : 200px;
-    margin-top : 20px;
+.main-contents{
+    display : flex;
+    justify-content : space-around;
+    height : 80%;
 }
 
-.penawaran-desc{
-    margin-left : 13px;
-    margin-top : 10px;
+.keranjang-item{
+    background-color : white;
+    display : flex;
+    width : 95%;
+    align-items : center;
+    justify-content : space-around;
+    padding : 18px 0;
+    font-size : 14px;
+    height : 40%;
 }
 
-.penawaran-kategori{
+.produk-gambar{
+    width : 110px;
+    margin-right : 10px;
+}
+
+.produk-tipe{
     font-size : 12px;
 }
 
-.penawaran-harga{
+.keranjang-bayar{
+    width : 25%;
+}
+
+.keranjang-checkbox{
+    transform : scale(2);
+    margin : 20px;
+}
+
+.produk-harga{
     font-weight : 600;
     margin-top : 5px;
 }
 
-.penawaran-discount{
+.produk-diskon{
     font-size : 14px;
     margin-top : 10px;
 }
-.penawaran-discount span:first-child{
+.produk-diskon span:first-child{
     background-color : rgba(255, 0, 0, .3);
     padding : 4px;
     border-radius : 5px;
     color : rgb(255,0,0);
     font-weight : 600;
 }
-.penawaran-discount span:last-child{
+.produk-diskon span:last-child{
     text-decoration: line-through;
     font-size : 12px;
 }
-.penawaran-stok{
-    font-size : 14px;
-    margin-top : 10px;
-    font-weight : 700;
-    margin-bottom : 12px;
-}
-
-.penawaran-spesial{
-    position : relative;
-}
-
-.penawaran-btn{
-    position : absolute;
-    top : 55%;
-    border-radius : 50%;
-    border : none;
-    width : 40px;
-    height : 40px;
-}
-
-.penawaran-btn-back{
-    left : 5%;
-}
- 
-
-.penawaran-btn-next{
-    right : 5%;
-}
-
-footer{
-    color : rgb(255, 255, 255);
+.produk-deskripsi{
+    align-self : flex-start;
     height : 100%;
-    background-color : var(--clr-primary-1);
-    line-height : 2.3;
-    font-size : 15px;
+    background-color :#E7E7E7;
+    margin-right : 10px;
+    padding : 10px;
+    min-width : 200px;
+    font-size : 12px;
+}
+.produk-deskripsi div:last-child{
+    max-width : 200px;
 }
 
-.footer-container{
-    width : 100%;
+.produk-profile{
     height : 100%;
     display : flex;
-    justify-content : space-around;
-    padding : 30px 0;
+    flex-direction : column;
+    justify-content : space-between;
+    padding-right : 50px;
 }
 
-.footer-title{
+.produk-amount{
     font-weight : 700;
-    margin-bottom : 10px;
-    cursor : none;
+
 }
 
-.copyright{
-    margin : 0 30px;
-    font-size : 12px;
+.keranjang-bayar{
+    height : 50%;
+    background-color :#E7E7E7;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    font-size: 14px;
+    padding : 15px;
+}
+
+.harga{
+    font-weight : bold;
+}
+
+.grand-total{
+    font-weight : bold;
     display : flex;
     justify-content : space-between;
-    padding : 30px;
 }
 
-.copyright-left span:last-child{
-    font-weight : 300;
-}
-
-.copyright ul{
-    display : flex;
-    justify-content : space-around;
-    width : 50%;
-}
-
-footer li{
-    cursor : pointer;
-}
-
-.footer-images{
-    width : 20px;
-    margin-right : 6px;
-}
-
-.media-sosial li{
-    display : flex;
-    align-items : center;
+.keranjang-beli{
+    border : none;
+    background-color : var(--clr-primary-2);
+    height : 30px;
+    color : white;
+    font-weight : 500;
 }
