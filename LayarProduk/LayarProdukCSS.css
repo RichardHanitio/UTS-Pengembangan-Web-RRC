@@ -154,46 +154,96 @@ header .header-name{
 
 main{
     padding: 40px 40px;
-    border: red 3px solid;
+
     margin: auto;
     width: 80%;
     display: grid;
     background-color: var(--clr-bg-content); 
     grid-template-columns: 25% 50% 25%;
-    height: 800px;
+    height: 100%;
     margin-top: 50px;
 }
 
 .left{
     display: flex;
-    
-    border: green 3px solid;
+    flex-direction: column;
+    width: 100%;
+
 }
 
-.left img{
+.left .top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 600px;
+}
+
+.left .top img{
     position: sticky;
     top: 160px;
     height: 270px;
-    margin: 0 auto;
     background-color: white;
 }
 
+.left .mid-left{
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 80px;
+   
+}
+
+.left .mid-left .content-comment{
+    background-color: white;
+    padding: 10px;
+}
+
+.left .mid-left .foto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.left .mid-left .foto img{
+    height: 61px;
+    width: 61px;
+    border-radius: 50%;
+    border: solid;
+}
+
+.left .mid-left .Komentar{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #c4c4c4;
+    padding: 5px;
+}
+
+.left .mid-left .Komentar p{
+    font-size:12px ;
+}
+
+
+
 .middle{
-    border: black 3px solid;
 
 }
 
 .middle .mid-content{
     display: flex;
     margin: 0 auto;
-    border: solid red;
     width: 90%;
+    height: 100%;
+    flex-direction: column;
 }
 
 .middle .mid-content .first-produk{
     background-color: white;
     width: 100%;
-    height: 170px;
+    height: 200px;
     display: flex;
     box-sizing: border-box;
     padding: 10px;
@@ -205,7 +255,6 @@ main{
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    border: solid;
 }
 
 .first-produk .first-left .part1 h4{
@@ -241,12 +290,23 @@ main{
 .first-produk .first-right{
     width: 50%;
     height: 100%;
-    border: solid;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.first-produk .first-right .star button{
+    background: transparent;
+    border: none;
+
+}
+
+.first-produk .first-right .star button:hover svg{
+    fill: yellow;
+    cursor: pointer;
+}
+
 
 .first-produk .first-right .star{
     display: flex;
@@ -259,20 +319,86 @@ main{
     padding-left: 5px;
 }
 
-.first-produk .first-right
+.first-produk .first-right .part2 button{
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 19px;
+    border: none;
+    background-color: var(--clr-primary-2);
+    color: white;
+    font-weight: bold;
+}
 
+.first-produk .first-right .part2 button:hover{
+    background-color: var(--clr-primary-1);
+    cursor: pointer;
+}
 
+.second-desk{
+    padding: 10px;
+    background-color: white;
+    border-radius:19px ;
+    margin-top: 30px;
+    text-align: justify;
+}
 
+.second-desk h3{
+    padding-bottom: 20px;
+}
 
+.second-desk p{
+    font-size: 14px;
+}
 
+.third-comment{
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 19px;
+    padding:10px;
+}
 
+.third-comment h3{
+    text-align: center;
+}
 
+.third-comment ul{
+    display: flex;
+    flex-direction: column;
+}
 
+.third-comment ul li{
+    display: flex;
+    margin: 10px 0;
+}
 
+.third-comment ul li img{
+    width: 61px;
+    height: 61px;
+    margin-right: 10px;
+    border: solid;
+    border-radius: 50%;
+}
 
+.third-comment ul li .isi{
+    width: 100%;
+    background-color: #c4c4c4;
+    box-sizing: border-box;
+    padding: 10px;
+}
 
+.third-comment ul li .isi h4{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
 
-
+.third-comment ul li .isi p{
+    font-size: 10px;
+    text-align: justify;
+}
 
 .right{
     width: 100%;
@@ -343,7 +469,59 @@ main{
     background-color: var(--clr-primary-1);
 }
 
+footer{
+    color : rgb(255, 255, 255);
+    height : 100%;
+    background-color : var(--clr-primary-1);
+    line-height : 2.3;
+    font-size : 15px;
+}
 
+.footer-container{
+    width : 100%;
+    height : 100%;
+    display : flex;
+    justify-content : space-around;
+    padding : 30px 0;
+}
+
+.footer-title{
+    font-weight : 700;
+    margin-bottom : 10px;
+    cursor : none;
+}
+
+.copyright{
+    margin : 0 30px;
+    font-size : 12px;
+    display : flex;
+    justify-content : space-between;
+    padding : 30px;
+}
+
+.copyright-left span:last-child{
+    font-weight : 300;
+}
+
+.copyright ul{
+    display : flex;
+    justify-content : space-around;
+    width : 50%;
+}
+
+footer li{
+    cursor : pointer;
+}
+
+.footer-images{
+    width : 20px;
+    margin-right : 6px;
+}
+
+.media-sosial li{
+    display : flex;
+    align-items : center;
+}
 
 
 
