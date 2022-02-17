@@ -22,7 +22,7 @@ body{
 }
 
 main{
-    height : 100vh;
+    height : 82vh;
     width : 90vw;
     margin : 20px auto;
     background: rgba(255, 255, 255, 0.17);
@@ -31,7 +31,6 @@ main{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
 .main-title{
@@ -46,9 +45,8 @@ main{
     display : flex;
     flex-direction : column;
     align-items : center;
-    justify-content : space-around;
     width : 70%;
-    height : 100%;
+    /* height : 80%; */
 }
 
 .main-contents{
@@ -66,6 +64,7 @@ main{
     padding : 18px 0;
     font-size : 14px;
     height : 210px;
+    margin : 20px 0 0;
 }
 
 .produk-gambar{
