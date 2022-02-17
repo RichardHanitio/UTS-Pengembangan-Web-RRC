@@ -1,23 +1,4 @@
-:root{
-    --clr-primary-1 : #000046;
-    --clr-primary-2 : #1CB5E0;
-
-    --clr-pembatas-1 : #00007C;
-    --clr-pembatas-2 : #1CB5E0;
-    --clr-pembatas-3 : #CDEEF8;
-
-    --text-color : #3F3F3F;
-}
-
-*,
-::before,
-::after
-{
-    margin : 0;
-    padding : 0;
-    box-sizing : border-box;
-    font-family : 'Montserrat', sans-serif;
-}
+@import "../global_styles.css";
 
 body{
     color : rgb(255, 255, 255);
@@ -35,129 +16,18 @@ a{
     text-decoration: none;
 }
 
-
-/* header */
-header{
-    display : grid;
-    position : sticky;
-    top : 0;
-    left : 0;
-    right : 0;
-    bottom : 0;
-    height : 18vh;
-    background-color : var(--clr-primary-1);
-    grid-template-columns: 10% 10% 32% 32% 8% 8%; 
-    grid-template-rows : 30% 70%;
-    justify-content : center;
-    align-items : center;
-    z-index : 1;
+.hero-image{
+    height : 80vh;
+    width : 100%;
 }
 
 button{
     cursor : pointer;
 }
 
-.current-page{
-    color : var(--clr-pembatas-2);
-}
-
-.header-logo{
-    height: 90px;  
-    margin : 10px;  
-}
-
-.header-name{
-    margin-left : 5px;
-}
-
-.header-nav, 
-.header-cari{
-    grid-column : span 2;
-}
-
-.header-logo,
-.header-name,
-.btn
-{
-    grid-row : span 2;
-}
-
-.header-nav{
-    align-self : flex-end;
-}
-
-.header-nav ul{
-    display : flex;
-    font-size : 15px;
-    /* background-color: pink; */
-    justify-content : space-around;
-    width : 90%;
-    margin : 0 auto;
-}
-
-.header-nav li{
-    cursor : pointer;
-}
-
-.header-cari{
-    background-color: rgb(255,255,255);
-    display : flex;
-    justify-content : center;
-    width : 90%;
-    margin : 0 auto;
-    height : 50%;
-    border : 1px solid rgb(53, 53, 53);
-}
-
-.header-cari input{
-    width : 100%;
-    outline : none;
-    border : none;
-    padding : 10px;
-}
-
-.header-cari button{
-    color : rgb(255, 255, 255);
-    width : 100px;
-    height : 90%;
-    margin : auto 2px;
-    border : none;
-    background-color : var(--clr-primary-1);
-}
-
-.btn{
-    height : 28%;
-    border-radius : 10px;
-    border : none;
-    width : 80%;
-    font-weight : bold;
-}
-
-.btn-masuk{
-    color : var(--clr-primary-1);
-    background : rgb(255, 255, 255);
-}
-
-.btn-daftar{
-    color : rgb(255, 255, 255);
-    background: var(--clr-pembatas-2);
-}
-
-.pembatas{
-    position : sticky;
-    top : 18%;
-    height : 1vh;
-    background-image : linear-gradient(to right, var(--clr-pembatas-1), var(--clr-pembatas-2), var(--clr-pembatas-3));
-    z-index : 1;
-}
-
-.hero-image{
-    width : 100%;
-}
-
 /* main */
 main{
-    height : 260vh;
+    height : 280vh;
     background-image : linear-gradient(to bottom, var(--clr-primary-1), var(--clr-primary-2));
 }
 
@@ -169,12 +39,10 @@ main{
 
 .kategori-lists{
     display : grid;
-    color : var(--text-color);
     grid-template-columns: repeat(3, 1fr);
     grid-gap : 30px;
     width : 70%;
     height : 70%;
-    /* background-color : pink; */
     margin : 0 auto;
 }
 
@@ -185,24 +53,41 @@ main{
 }
 
 .kategori-list{
-    background-color: rgb(255, 255, 255);
     border-radius : 20px;
     display : flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     cursor : pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, .6);
+    max-height : 180px;
+    min-height : 180px;
+    transition: all .1s;
+}
+
+
+
+.kategori-list:hover{
+    transform : scale(1.1);
+    box-shadow: 2px 6px 10px rgba(255, 255, 255, 0.3);
 }
 
 .kategori-image{
-    width : 125px;
+    /* width : 125px; */
+    width : var(--kategori-image-width);
+    margin : 5px 0;
 }
 
 .kategori-caption{
     text-align: center;
     font-weight: 500;
     margin-bottom : 15px;
-    font-size : 20px;
+    font-size : 17px;
 }
 
 .penawaran-title{
@@ -211,7 +96,6 @@ main{
 
 .penawaran-lists{
     display : grid;
-    color : var(--text-color);
     grid-template-columns: repeat(3, 1fr);
     grid-gap : 40px;
     width : 70%;
@@ -220,12 +104,23 @@ main{
 }
 
 .penawaran-list{
-    background-color : rgb(239, 239, 239);
     border-radius : 10px;
     display : flex;
     flex-direction: column;
     margin-top : 15px;
     cursor : pointer;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition : .3s;
+}
+
+.penawaran-list:hover{
+    transform : scale(1.05);
+    box-shadow: 2px 6px 10px rgba(255, 255, 255, 0.2);
 }
 
 .penawaran-image{
@@ -281,6 +176,16 @@ main{
     border : none;
     width : 40px;
     height : 40px;
+    transition : transform .2s;
+}
+
+.penawaran-btn path{
+    box-shadow : 2px 3px 5px rgb(91, 91, 91);
+}
+
+.penawaran-btn:hover{
+     box-shadow : 2px 3px 5px rgba(125, 125, 125, 0.7);
+     transform : scale(1.1);
 }
 
 .penawaran-btn-back{
@@ -292,56 +197,3 @@ main{
     right : 5%;
 }
 
-footer{
-    color : rgb(255, 255, 255);
-    height : 100%;
-    background-color : var(--clr-primary-1);
-    line-height : 2.3;
-    font-size : 15px;
-}
-
-.footer-container{
-    width : 100%;
-    height : 100%;
-    display : flex;
-    justify-content : space-around;
-    padding : 30px 0;
-}
-
-.footer-title{
-    font-weight : 700;
-    margin-bottom : 10px;
-    cursor : none;
-}
-
-.copyright{
-    margin : 0 30px;
-    font-size : 12px;
-    display : flex;
-    justify-content : space-between;
-    padding : 30px;
-}
-
-.copyright-left span:last-child{
-    font-weight : 300;
-}
-
-.copyright ul{
-    display : flex;
-    justify-content : space-around;
-    width : 50%;
-}
-
-footer li{
-    cursor : pointer;
-}
-
-.footer-images{
-    width : 20px;
-    margin-right : 6px;
-}
-
-.media-sosial li{
-    display : flex;
-    align-items : center;
-}

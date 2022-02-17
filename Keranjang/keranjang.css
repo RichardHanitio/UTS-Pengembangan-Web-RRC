@@ -1,3 +1,4 @@
+@import "../global_styles.css";
 :root{
     --clr-primary-1 : #000046;
     --clr-primary-2 : #1CB5E0;
@@ -244,6 +245,7 @@ main{
     padding : 10px;
     min-width : 200px;
     font-size : 12px;
+    overflow : hidden;
 }
 .produk-deskripsi div:last-child{
     max-width : 200px;

@@ -1,0 +1,109 @@
+header{
+    display : grid;
+    position : sticky;
+    top : 0;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    height : 18vh;
+    background-color : var(--clr-primary-1);
+    grid-template-columns: 10% 10% 32% 32% 8% 8%; 
+    grid-template-rows : 30% 70%;
+    justify-content : center;
+    align-items : center;
+    z-index : 1;
+    color : white;
+}
+
+.current-page{
+    color : var(--clr-pembatas-2);
+}
+
+.header-logo{
+    height: 90px;  
+    margin : 10px;  
+}
+
+.header-name{
+    margin-left : 5px;
+}
+
+.header-nav, 
+.header-cari{
+    grid-column : span 2;
+}
+
+.header-logo,
+.header-name,
+.btn
+{
+    grid-row : span 2;
+}
+
+.header-nav{
+    align-self : flex-end;
+}
+
+.header-nav ul{
+    display : flex;
+    font-size : 15px;
+    justify-content : space-around;
+    width : 90%;
+    margin : 0 auto;
+}
+
+.header-nav li{
+    cursor : pointer;
+}
+
+.header-cari{
+    background-color: rgb(255,255,255);
+    display : flex;
+    justify-content : center;
+    width : 90%;
+    margin : 0 auto;
+    height : 50%;
+    border : 1px solid rgb(53, 53, 53);
+}
+
+.header-cari input{
+    width : 100%;
+    outline : none;
+    border : none;
+    padding : 10px;
+}
+
+.header-cari button{
+    color : rgb(255, 255, 255);
+    width : 100px;
+    height : 90%;
+    margin : auto 2px;
+    border : none;
+    background-color : var(--clr-primary-1);
+}
+
+.btn{
+    height : 28%;
+    border-radius : 10px;
+    border : none;
+    width : 80%;
+    font-weight : bold;
+}
+
+.btn-masuk{
+    color : var(--clr-primary-1);
+    background : rgb(255, 255, 255);
+}
+
+.btn-daftar{
+    color : rgb(255, 255, 255);
+    background: var(--clr-pembatas-2);
+}
+
+.pembatas{
+    position : sticky;
+    top : 18%;
+    height : 1vh;
+    background-image : linear-gradient(to right, var(--clr-pembatas-1), var(--clr-pembatas-2), var(--clr-pembatas-3));
+    z-index : 1;
+}

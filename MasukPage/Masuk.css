@@ -1,3 +1,5 @@
+@import "../global_styles.css";
+
 *{
     padding: 0;
     margin: 0%;
@@ -13,8 +15,8 @@ body{
 }
 
 .container{
-    height: 70%;
-    width: 50%;
+    height: 75%;
+    width: 40%;
     overflow-x: hidden;
     border-radius: 64px;
     background-color: white;
@@ -30,7 +32,7 @@ body{
 .container .container-top p{
     color: white;
     padding: 10px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 
@@ -43,8 +45,7 @@ body{
     margin-bottom: 20px;
 }
 .container form .image-container img{
-    width: 170px;
-    height:170px;
+    width: 100px;
 }
 
 form ul{
@@ -58,12 +59,12 @@ form ul{
     align-items: center;
 }
 #check label{
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 5px;
 }
 #check input{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 form ul li{
     display: flex;
@@ -73,7 +74,7 @@ form ul li{
 }
 
 form ul li label{
-    font-size: 24px;
+    font-size: 17px;
     color: black;
 }
 
@@ -86,10 +87,10 @@ form ul li input{
 }
 
 form ul li button{
-    height: 50px;
+    height: 30px;
     color: white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #1CB5E0;
     border: none;
     margin-top: 10px;

@@ -1,0 +1,28 @@
+/* root variables */
+
+:root{
+    --clr-primary-1 : #000046;
+    --clr-primary-2 : #1CB5E0;
+
+    --clr-pembatas-1 : #00007C;
+    --clr-pembatas-2 : #1CB5E0;
+    --clr-pembatas-3 : #CDEEF8;
+
+    --text-primary-color : #3F3F3F;
+
+    --default-font-size : 14px;
+    --kategori-image-width : 120px;
+    --kategori-font-size : 17px;
+    
+    --footer-default-size : 12px;
+}
+
+*,
+::before,
+::after
+{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : 'Montserrat', sans-serif;
+}
