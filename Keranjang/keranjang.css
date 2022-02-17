@@ -22,7 +22,7 @@ body{
 }
 
 main{
-    height : 82vh;
+    height : 90vh;
     width : 90vw;
     margin : 20px auto;
     background: rgba(255, 255, 255, 0.17);
@@ -52,7 +52,7 @@ main{
 .main-contents{
     display : flex;
     justify-content : space-around;
-    height : 80%;
+    height : 82%;
 }
 
 .keranjang-item{
