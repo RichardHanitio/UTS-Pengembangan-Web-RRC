@@ -1,3 +1,4 @@
+
 header{
     display : grid;
     position : sticky;
@@ -13,6 +14,10 @@ header{
     align-items : center;
     z-index : 1;
     color : white;
+}
+
+button{
+    cursor: pointer;
 }
 
 .current-page{
@@ -93,12 +98,26 @@ header{
 .btn-masuk{
     color : var(--clr-primary-1);
     background : rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.btn-masuk:hover{
+    transform: scale(1.2);
+    background-color: rgb(255, 255, 255, 0.3);
+    color: white;
 }
 
 .btn-daftar{
     color : rgb(255, 255, 255);
     background: var(--clr-pembatas-2);
+    transition: 0.4s;
 }
+
+.btn-daftar:hover{
+    transform: scale(1.2);
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
 
 .pembatas{
     position : sticky;

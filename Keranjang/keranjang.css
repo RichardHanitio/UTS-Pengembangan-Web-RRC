@@ -178,3 +178,7 @@ main{
     color : white;
     font-weight : 500;
 }
+
+.keranjang-beli:hover{
+    background-color:var(--clr-primary-1);
+}

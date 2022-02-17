@@ -49,7 +49,7 @@ body{
     text-align: center;
 }
 .container form .image-container img{
-    width: 200px;
+    width: 150px;
 }
 
 form{
@@ -109,6 +109,5 @@ form ul li button{
 
 form ul li button:hover{
     cursor: pointer;
-    background-color: aqua;
-    color:#000046;
+    background-color: #000046;
 }
