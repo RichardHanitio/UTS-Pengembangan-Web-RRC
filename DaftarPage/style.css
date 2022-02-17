@@ -58,11 +58,11 @@ body{
     max-height: fit-content;
     margin: auto;
     border-radius: 64px;
-    overflow-x: hidden;
+
 }
 
 .right .right-container .container-top{
-    
+    border-radius: 64px 64px 0px 0px;
     background-color: #000046;
 }
 
