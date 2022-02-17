@@ -8,6 +8,8 @@ body{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(#000046,#1CB5E0);
+    background:linear-gradient(#000046,#1CB5E0) fixed no-repeat center;
+    background-size: cover;
     display: flex;
 }
 
@@ -46,14 +48,13 @@ body{
     height: 100%;
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .right .right-container{
-    display: flex;
-    flex-direction: column;
     background-color: white;
-    height: 80%;
+    height: 600px;
     width: 80%;
     max-height: fit-content;
     margin: auto;
@@ -74,19 +75,25 @@ body{
 }
 
 form{
-
+    box-sizing: border-box;
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
 }
 
 form ul{
     padding: 30px 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 form ul li{
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+
+
 }
 
 form ul li label{
