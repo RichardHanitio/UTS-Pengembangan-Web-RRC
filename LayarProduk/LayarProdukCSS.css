@@ -248,6 +248,7 @@ main{
     box-sizing: border-box;
     padding: 10px;
     border-radius: 19px;
+    justify-content: space-between;
 }
 
 .middle .mid-content .first-produk .first-left{
