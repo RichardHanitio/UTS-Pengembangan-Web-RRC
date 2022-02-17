@@ -53,8 +53,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     max-height: fit-content;
     margin: auto;
     border-radius: 64px;
@@ -70,7 +70,7 @@ body{
     padding: 10px;
     color: white;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 form{
@@ -80,7 +80,7 @@ form{
 }
 
 form ul{
-    padding: 40px 50px;
+    padding: 30px 40px;
 }
 
 form ul li{
@@ -90,9 +90,10 @@ form ul li{
 }
 
 form ul li label{
-    font-size: 24px;
+    font-size: 16px;
     color: black;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 form ul li input{
