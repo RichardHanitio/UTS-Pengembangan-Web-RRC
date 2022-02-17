@@ -1,3 +1,4 @@
+@import "../global_styles.css";
 *{
     padding: 0;
     margin: 0;
@@ -162,6 +163,13 @@ main{
     grid-template-columns: 25% 50% 25%;
     height: 100%;
     margin-top: 50px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .left{
