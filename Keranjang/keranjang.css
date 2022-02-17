@@ -24,8 +24,7 @@ body{
 main{
     height : 100vh;
     width : 90vw;
-    margin : 0 auto;
-
+    margin : 20px auto;
     background: rgba(255, 255, 255, 0.17);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -36,7 +35,8 @@ main{
 }
 
 .main-title{
-    margin : 20px 0;
+    color : white;
+    margin : 0 auto 20px;
     text-align : center;
     padding-top : 25px;
 }
@@ -65,7 +65,7 @@ main{
     justify-content : space-around;
     padding : 18px 0;
     font-size : 14px;
-    height : 40%;
+    height : 210px;
 }
 
 .produk-gambar{
@@ -130,7 +130,26 @@ main{
 
 .produk-amount{
     font-weight : 700;
+}
 
+.jumlah{
+    display: flex;
+    height: 20px;
+}
+
+.plusminus{
+    height: 100%;
+}
+.plusminus img{
+    height: 100%;
+    background-color: #c4c4c4;
+}
+
+.value{
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px ;
 }
 
 .keranjang-bayar{
