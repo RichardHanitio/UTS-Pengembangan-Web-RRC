@@ -24,7 +24,7 @@ body{
 main{
     height : 90vh;
     width : 90vw;
-    margin : 20px auto;
+    margin : 25px auto;
     background: rgba(255, 255, 255, 0.17);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@ main{
     flex-direction : column;
     align-items : center;
     width : 70%;
-    /* height : 80%; */
+    height : 100%;
 }
 
 .main-contents{
@@ -63,17 +63,17 @@ main{
     justify-content : space-around;
     padding : 18px 0;
     font-size : 14px;
-    height : 210px;
-    margin : 20px 0 0;
+    margin : 20px 0;
+    height : 100%;
 }
 
 .produk-gambar{
-    width : 110px;
+    width : 150px;
     margin-right : 10px;
 }
 
 .produk-tipe{
-    font-size : 12px;
+    font-size : 14px;
 }
 
 .keranjang-bayar{
@@ -91,7 +91,7 @@ main{
 }
 
 .produk-diskon{
-    font-size : 14px;
+    font-size : 16px;
     margin-top : 10px;
 }
 .produk-diskon span:first-child{
@@ -103,7 +103,7 @@ main{
 }
 .produk-diskon span:last-child{
     text-decoration: line-through;
-    font-size : 12px;
+    font-size : 14px;
 }
 .produk-deskripsi{
     align-self : flex-start;
@@ -111,8 +111,8 @@ main{
     background-color :#E7E7E7;
     margin-right : 10px;
     padding : 10px;
-    min-width : 200px;
-    font-size : 12px;
+    min-width : 250px;
+    font-size : 14px;
     overflow : hidden;
 }
 .produk-deskripsi div:last-child{
@@ -148,7 +148,7 @@ main{
     width: 50px;
     text-align: center;
     font-weight: bold;
-    font-size: 18px ;
+    font-size: 18px;
 }
 
 .keranjang-bayar{
