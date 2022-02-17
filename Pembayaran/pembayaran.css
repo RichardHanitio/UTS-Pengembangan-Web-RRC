@@ -156,6 +156,7 @@ body{
 .pilih h1{
     font-size: 20px;
     color: white;
+    margin: 20px auto;
 }
 
 .metode{
@@ -168,4 +169,18 @@ body{
 .metode h1{
     font-size: 20px;
     color: black;
+}
+
+.metode .p1, .p2, .p3, .p4, .p5, .p6, .p7{
+    margin-top: 70px;
+}
+
+.metode img{
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+.clearfix{
+    overflow: auto;
 }
