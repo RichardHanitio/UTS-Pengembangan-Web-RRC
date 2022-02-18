@@ -71,17 +71,9 @@ body{
     padding: 30px 0;
 }
 
-<<<<<<< HEAD
 .container .left{
     display: flex;
     align-items: center;
-=======
-.metode img{
-    float: left;
-    width: 150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
->>>>>>> 54686e0eed71287f62fae29544907324b864a6a0
 }
 
 .container .left p{
