@@ -56,6 +56,11 @@ body{
     margin-bottom: 20px;
 }
 
+.penawaran-btn:hover{
+    box-shadow : 2px 3px 5px rgba(125, 125, 125, 0.7);
+    transform : scale(1.1);
+}
+
 .pembayaran{
     width: 100%;
     height: 100%;
