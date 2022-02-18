@@ -182,3 +182,18 @@ main{
 .keranjang-beli:hover{
     background-color:var(--clr-primary-1);
 }
+
+.button{
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 19px;
+    border: none;
+    background-color: var(--clr-primary-2);
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: var(--clr-primary-1);
+    cursor: pointer;
+}
