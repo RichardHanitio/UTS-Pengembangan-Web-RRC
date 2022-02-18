@@ -53,17 +53,21 @@ a{
 }
 
 body{
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(#000046,#1CB5E0);
     background-repeat: no-repeat;
 }
 
 .pilih{
-    margin-top: 10px;
-    text-align: center;
-    border: 1px solid;
-    background-color: #1CB5E0;
-    margin-left: 100px;
-    margin-right: 100px;
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--clr-primary-2);
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    height: 10vh;
+    margin: 30px auto 0;
 }
 
 .pilih h1{
@@ -73,10 +77,15 @@ body{
 }
 
 .metode{
-    border: 1px solid;
+    display: flex;
+    box-sizing: border-box;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 50px;
+    margin-bottom: 20px;
 }
 
 .metode img{
@@ -84,34 +93,41 @@ body{
     height: 150px;
 }
 
-.penawaran-btn{
-    float: right;
-    top : 60%;
-    border-radius : 50%;
-    border : none;
-    width : 40px;
-    height : 40px;
-    transition : transform .2s;
-    margin-right: 100px;
-    margin-top: 30px;
-}
-
-.penawaran-btn path{
-    box-shadow : 2px 3px 5px rgb(91, 91, 91);
-}
-
 .penawaran-btn:hover{
     box-shadow : 2px 3px 5px rgba(125, 125, 125, 0.7);
     transform : scale(1.1);
 }
 
-.pengiriman{
-    margin: 30px auto;
-    margin-left: 30px;
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
 }
 
-.pengiriman p{
-    margin-top: 20px;
+.container .left{
+    display: flex;
+    align-items: center;
 }
+
+.container .left p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left img{
+    padding-right: 30px;
+    width: 200px;
+    height: 100%;
+}
+
+.right button{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+
 
 

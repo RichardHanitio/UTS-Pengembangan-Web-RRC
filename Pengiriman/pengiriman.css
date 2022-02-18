@@ -80,6 +80,7 @@ body{
     margin: 0 auto;
     flex-direction: column;
     padding: 50px;
+    margin-bottom: 20px;
 }
 
 .metode img{
@@ -87,32 +88,9 @@ body{
     height: 150px;
 }
 
-.penawaran-btn{
-    float: right;
-    top : 60%;
-    border-radius : 50%;
-    border : none;
-    width : 40px;
-    height : 40px;
-    transition : transform .2s;
-    margin-right: 100px;
-}
-
-.penawaran-btn path{
-    box-shadow : 2px 3px 5px rgb(91, 91, 91);
-}
-
 .penawaran-btn:hover{
     box-shadow : 2px 3px 5px rgba(125, 125, 125, 0.7);
     transform : scale(1.1);
-}
-
-.pengiriman{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px ;
 }
 
 .container{
