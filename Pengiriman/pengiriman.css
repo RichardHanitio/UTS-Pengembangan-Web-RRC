@@ -62,8 +62,8 @@ body{
     text-align: center;
     border: 1px solid;
     background-color: #1CB5E0;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 .pilih h1{
@@ -75,8 +75,9 @@ body{
 .metode{
     border: 1px solid;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 20px;
 }
 
 .metode img{
@@ -93,7 +94,7 @@ body{
     height : 40px;
     transition : transform .2s;
     margin-right: 100px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .penawaran-btn1{

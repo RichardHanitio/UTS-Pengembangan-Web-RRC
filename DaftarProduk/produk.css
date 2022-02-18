@@ -60,6 +60,7 @@ button{
     align-self : center;
     width : 220px;
     margin-top : 20px;
+    height: 200px;
 }
 
 .penawaran-desc{
@@ -136,5 +137,5 @@ body{
 .penawaran-spesial-2{
     width : 75vw;
     height : 45%;
-    margin-top : 250px;
+    margin-top : 200px;
 }
