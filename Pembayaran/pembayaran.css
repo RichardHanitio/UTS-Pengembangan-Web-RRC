@@ -64,6 +64,10 @@ body{
     margin-bottom: 40px ;
 }
 
+.pembayaran h1{
+    margin-bottom: 40px;
+}
+
 .container{
     width: 100%;
     display: flex;
