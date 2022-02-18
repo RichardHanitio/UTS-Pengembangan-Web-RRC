@@ -79,33 +79,9 @@ body{
     margin-right: 100px;
 }
 
-.metode h1{
-    font-size: 20px;
-    color: black;
-}
-
-.metode .p1, .p2, .p3, .p4, .p5, .p6, .p7{
-    margin-top: 80px;
-    margin-left: 300px;
-    color: black;
-}
-
-.metode .p8, .p9{
-    margin-left: 300px;
-    color: black;
-}
-
 .metode img{
-    float: left;
-    width: 200px;
+    width: 150px;
     height: 150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.clearfix{
-    overflow: auto;
-    margin-left: 30px;
 }
 
 .penawaran-btn{
@@ -116,8 +92,8 @@ body{
     width : 40px;
     height : 40px;
     transition : transform .2s;
-    margin-top: 100px;
     margin-right: 100px;
+    margin-top: 30px;
 }
 
 .penawaran-btn path{
@@ -129,5 +105,13 @@ body{
     transform : scale(1.1);
 }
 
+.pengiriman{
+    margin: 30px auto;
+    margin-left: 30px;
+}
+
+.pengiriman p{
+    margin-top: 20px;
+}
 
 
