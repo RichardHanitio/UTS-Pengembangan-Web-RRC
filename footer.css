@@ -3,7 +3,7 @@ footer{
     height : 100%;
     background-color : var(--clr-primary-1);
     line-height : 2.3;
-    font-size : var(--footer-default-size) ;
+    font-size : var(--footer-default-size);
 }
 
 .footer-container{

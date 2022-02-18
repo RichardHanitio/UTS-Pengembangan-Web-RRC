@@ -1,22 +1,4 @@
 @import "../global_styles.css";
-*{
-    padding: 0;
-    margin: 0;
-    font-family : 'Montserrat', sans-serif;
-}
-
-:root{
-    --clr-primary-1 : #000046;
-    --clr-primary-2 : #1CB5E0;
-    --clr-bg-content: #e7e7e7;
-
-    --clr-pembatas-1 : #00007C;
-    --clr-pembatas-2 : #1CB5E0;
-    --clr-pembatas-3 : #CDEEF8;
-
-    --text-color : #3F3F3F;
-}
-
 li{
     list-style-type: none;
 }
@@ -24,6 +6,7 @@ li{
 a:visited{
     color : rgb(255, 255, 255);
 }
+
 a{
     text-decoration: none;
     color : white;
@@ -35,15 +18,11 @@ body{
     background-image: linear-gradient(var(--clr-primary-1),var(--clr-primary-2));
 }
 
-.hero-image{
-    width : 100%;
-}
-
 main{
     padding: 40px 40px;
 
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: grid;
     background-color: var(--clr-bg-content); 
     grid-template-columns: 25% 50% 25%;

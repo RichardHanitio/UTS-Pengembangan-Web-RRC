@@ -48,9 +48,6 @@ a{
     z-index : 1;
 }
 
-.hero-image{
-    width : 100%;
-}
 
 body{
     background-image: linear-gradient(#000046,#1CB5E0);
@@ -128,3 +125,6 @@ body{
 }
 
 
+main{
+    width : 90vw;
+}
