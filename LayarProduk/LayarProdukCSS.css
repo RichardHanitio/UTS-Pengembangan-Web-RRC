@@ -90,9 +90,15 @@ main{
    
 }
 
+
+.left .mid-left h3{
+    color: white;
+}
+
 .left .mid-left .content-comment{
     background-color: white;
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .left .mid-left .foto{
@@ -109,11 +115,16 @@ main{
     border: solid;
 }
 
+.left .mid-left .foto h3{
+    color: black;
+}
+
 .left .mid-left .Komentar{
     width: 100%;
     box-sizing: border-box;
     background-color: #c4c4c4;
-    padding: 5px;
+    padding: 10px;
+    border: solid;
 }
 
 .left .mid-left .Komentar p{
@@ -152,8 +163,13 @@ main{
     justify-content: space-between;
 }
 
+.first-produk .first-left .part1 h2{
+    font-size: 18px;
+}
+
 .first-produk .first-left .part1 h4{
     color: #c4c4c4;
+    font-size: 16px;
 }
 
 .first-produk .first-left .part2{
@@ -165,6 +181,7 @@ main{
     background-color: rgb(255, 0, 0, 0.3);
     color: red;
     padding: 5px;
+    font-size: 16px;
 }
 
 .first-produk .first-left .part2 .diskon-right{
@@ -175,11 +192,17 @@ main{
     background-color: white;
     padding: 0px;
     color: black;
+    font-size: 16px;
 }
 
 .first-produk .first-left .part2 .diskon-right h4{
     color: #c4c4c4;
     text-decoration: line-through;
+    font-size: 14px;
+}
+
+.part3 h3{
+    font-size: 16px;
 }
 
 .first-produk .first-right{
@@ -189,6 +212,10 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.first-produk .first-right h2{
+    font-size: 18px;
 }
 
 .first-produk .first-right .star button{
@@ -230,7 +257,8 @@ main{
 }
 
 .second-desk{
-    padding: 10px;
+    box-sizing: border-box;
+    padding: 30px;
     background-color: white;
     border-radius:19px ;
     margin-top: 30px;
@@ -242,7 +270,7 @@ main{
 }
 
 .second-desk p{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .third-comment{
@@ -263,11 +291,13 @@ main{
 .third-comment ul{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .third-comment ul li{
     display: flex;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .third-comment ul li img{
@@ -333,6 +363,12 @@ main{
 .right .container-beli .plusminus{
     height: 100%;
 }
+.right .container-beli .plusminus button{
+    margin: 0%;
+    padding: 0;
+    height: 100%;
+}
+
 .right .container-beli .plusminus img{
     height: 100%;
     background-color: #c4c4c4;
