@@ -223,7 +223,6 @@ main{
 
 .first-produk .first-right .part2 button{
     height: 40px;
-    padding: 10px 20px;
     border-radius: 19px;
     border: none;
     background-color: var(--clr-primary-2);
