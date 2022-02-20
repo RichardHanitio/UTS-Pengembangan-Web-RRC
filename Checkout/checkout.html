@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../ImageBank/logo.png">
+    <title>Wijaya Store | Keranjang</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="../header.css">
+</head>
+<body>
+    <header>
+        <img src="../ImageBank/logo.png" alt="" class="header-logo">
+        <h3 class="header-name">WIJAYA STORE</h3>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../HalamanUtama/index.html">Halaman Utama</a></li>
+                <li><a href="../HalamanKategori/kategori.html">Kategori</a></li>
+                <li class="current-page">Keranjang</li>
+                <li><a href="../Tentang/Tentang.html">Tentang</a></li>
+            </ul>
+        </nav>
+        <button class="btn btn-masuk" onClick="location.href= '../MasukPage/Masuk.html'">Masuk</button>
+        <button class="btn btn-daftar" onClick="location.href='../DaftarPage/Daftar.html'">Daftar</button>
+        <form class="header-cari">
+            <input type="text" placeholder="Cari disini...">
+            <button>CARI</button>
+        </form>
+    </header>
+    <div class="pembatas"></div>
+
+    <main>
+        <div class="main-contents">
+            <div class="keranjang-items">
+                <h1 class="main-title">Keranjang</h1>
+                <div class="keranjang-item">
+                    <img src="../ImageBank/xiaomi.png" alt="" class="produk-gambar">
+                    <div class="produk-profile">
+                        <div class="produk-profile-atas">
+                            <div class="produk-nama">Xiaomi Poco X3 Pro</div>
+                            <div class="produk-tipe">Handphone</div>
+                            <div class="produk-harga">Rp4.059.000</div>
+                            <div class="produk-diskon">
+                                <span>50%</span>
+                                <span>Rp8.118.000</span>
+                            </div>
+                        </div>
+                        <div class="produk-amount">
+                            <div class="jumlah">
+                                <div class="plusminus">
+                                    <img src="../ImageBank/minus-solid.svg" alt="">
+                                </div>
+                                <div class="value">
+                                    <p>1</p>
+                                </div>
+                                <div class="plusminus">
+                                    <img src="../ImageBank/plus-solid.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-contents">
+            <div class="keranjang-items">
+                <h1 class="main-title">Pengiriman dan pembayaran</h1>
+                <div class="keranjang-item">
+                    <div class="pengiriman">
+                        <div class="container">
+                            <div class="left">
+                                <h3>Pengiriman reguler (2-4 hari)</h3>
+                            </div>
+
+                            <div class="right">
+                                <a href="../Pengiriman/pengiriman.html">
+                                    <button class="penawaran-btn penawaran-btn-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="left">
+                                <div class="biaya">
+                                    <h3>SiCepat Reg</h3>
+                                    <p>Rp37.000</p>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <a href="../Kurir/Kurir.html">
+                                    <button class="penawaran-btn penawaran-btn-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="container">
+                            <div class="left">
+                                <img src="../ImageBank/ovo.png">
+                                <div class="biaya">
+                                    <p class="p2">Rp200.000</p>
+                                    <p class="p9">OVO points 200.000</p>
+                                </div>
+                            </div>
+            
+                            <div class="right">
+                                <a href="../Pembayaran/pembayaran.html">
+                                    <button class="penawaran-btn penawaran-btn-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-contents">
+            <div class="keranjang-items">
+                <h1 class="main-title">Pengiriman dan pembayaran</h1>
+                <div class="keranjang-item">
+                    <div class="container1">
+                        <div class="left">
+                            <div class="biaya">
+                                <p class="p2">Total Bayar</p>
+                                <h3>Rp.157.000</h3>
+                            </div>
+                        </div>
+        
+                        <div class="right">
+                            <button onclick="location.href='../Pembayaran/pembayaran.html'" class="keranjang-beli">
+                                Bayar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
