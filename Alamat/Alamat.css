@@ -1,0 +1,86 @@
+@import url("../global_styles.css");
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center fixed linear-gradient(#000046,#1CB5E0) ;
+}
+
+main{
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ;
+    background-color: white;
+}
+
+.judul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    align-items: center;
+    background-color: var(--clr-primary-2);
+    height: 70px;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.container h3{
+    padding-bottom: 20px;
+}
+
+.container input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vh;
+    border: none;
+    border-bottom: solid #e4e4e4;
+    padding: 10px;
+}
+
+#pesan{
+    margin-bottom: 10px;
+}
+
+.checker{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 10vh;
+    margin-top: 30px;
+}
+
+.checker input{
+    height: 3vh;
+    width: 3vh;
+    margin-right: 10px;
+}
+
+button{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    background-color: var(--clr-primary-2);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border: none;
+}
