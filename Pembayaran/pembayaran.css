@@ -1,25 +1,12 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing : border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
-}
+@import "../global_styles.css";
 
 a{
     color: white;
+    text-decoration: none;
 }
 
-:root{
-    --clr-primary-1 : #000046;
-    --clr-primary-2 : #1CB5E0;
-
-    --clr-pembatas-1 : #00007C;
-    --clr-pembatas-2 : #1CB5E0;
-    --clr-pembatas-3 : #CDEEF8;
-
-    --text-color : #3F3F3F;
+li{
+    list-style-type: none;
 }
 
 body{

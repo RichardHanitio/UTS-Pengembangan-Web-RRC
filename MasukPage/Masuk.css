@@ -1,11 +1,5 @@
 @import "../global_styles.css";
 
-*{
-    padding: 0;
-    margin: 0%;
-    font-family: 'Montserrat', sans-serif;
-}
-
 body{
     height: 100vh;
     background: fixed no-repeat center linear-gradient(#000046,#1CB5E0) ;
