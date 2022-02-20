@@ -1,55 +1,8 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing : border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
-}
+@import "../global_styles.css";
 
 a{
     color: white;
-}
-
-:root{
-    --clr-primary-1 : #000046;
-    --clr-primary-2 : #1CB5E0;
-
-    --clr-pembatas-1 : #00007C;
-    --clr-pembatas-2 : #1CB5E0;
-    --clr-pembatas-3 : #CDEEF8;
-
-    --text-color : #3F3F3F;
-}
-
-.btn{
-    height : 28%;
-    border-radius : 10px;
-    border : none;
-    width : 80%;
-    font-weight : bold;
-}
-
-.btn-masuk{
-    color : var(--clr-primary-1);
-    background : rgb(255, 255, 255);
-}
-
-.btn-daftar{
-    color : rgb(255, 255, 255);
-    background: var(--clr-pembatas-2);
-}
-
-.pembatas{
-    position : sticky;
-    top : 18%;
-    height : 1vh;
-    background-image : linear-gradient(to right, var(--clr-pembatas-1), var(--clr-pembatas-2), var(--clr-pembatas-3));
-    z-index : 1;
-}
-
-.hero-image{
-    width : 100%;
+    text-decoration: none;
 }
 
 body{
@@ -71,7 +24,6 @@ body{
 }
 
 .pilih h1{
-    font-size: 20px;
     color: white;
     margin: 20px auto;
 }
