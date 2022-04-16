@@ -67,8 +67,12 @@
         </div>
 
         <div class="checker">
-            <input type="checkbox">
+            <input id="checkbox" type="checkbox" onclick="check()">
             <h5>Jadikan alamat utama</h5>
+        </div>
+
+        <div class="alamat">
+            <p id="alamat"></p>
         </div>
 
         <button onclick="window.location.href='../Checkout/checkout.html'">
@@ -76,5 +80,18 @@
         </button>
 
     </main>
+
+    <script>
+        function check(){
+            var y = document.getElementById("checkbox");
+
+            if(y.checked == 1){
+                document.getElementById("alamat").innerHTML = "Alamat anda sudah disimpan";
+            }
+            else{
+                document.getElementById("alamat").innerHTML = "";
+            }
+        }
+    </script>
 </body>
 </html>
