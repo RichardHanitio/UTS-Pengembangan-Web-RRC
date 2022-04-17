@@ -3,13 +3,11 @@ header{
     display : grid;
     position : sticky;
     top : 0;
-    left : 0;
-    right : 0;
-    bottom : 0;
     height : 18vh;
     background-color : var(--clr-primary-1);
     grid-template-columns: 10% 10% 32% 32% 8% 8%; 
-    grid-template-rows : 30% 70%;
+    /* grid-template-columns: 7rem 6rem 23rem 23rem 6rem 6rem; */
+    grid-template-rows: 40% 60%;
     justify-content : center;
     align-items : center;
     z-index : 1;

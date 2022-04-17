@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Alamat.css">
-    <link rel="stylesheet" href="../header.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../ImageBank/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Alamat.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../ImageBank/logo.png" />
     <title>Wijaya Store | Alamat</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="../ImageBank/logo.png" alt="" class="header-logo">
-        <h3 class="header-name">WIJAYA STORE</h3>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="../index.html">Halaman Utama</a></li>
-                <li><a href="../HalamanKategori/kategori.html">Kategori</a></li>
-                <li><a href="../Keranjang/keranjang.html">Keranjang</a></li>
-                <li><a href="../Tentang/Tentang.html">Tentang</a></li>
-            </ul>
-        </nav>
-        <button class="btn btn-masuk" onClick="location.href= '../MasukPage/Masuk.html'">Masuk</button>
-        <button class="btn btn-daftar" onClick="location.href='../DaftarPage/Daftar.html'">Daftar</button>
-        <form class="header-cari">
-            <input type="text" placeholder="Cari disini...">
-            <button>CARI</button>
-        </form>
+      <img src="../ImageBank/logo.png" alt="" class="header-logo" />
+      <h3 class="header-name">WIJAYA STORE</h3>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">Halaman Utama</a></li>
+          <li><a href="../HalamanKategori/kategori.html">Kategori</a></li>
+          <li><a href="../Keranjang/keranjang.html">Keranjang</a></li>
+          <li><a href="../Tentang/Tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+      <button
+        class="btn btn-masuk"
+        onClick="location.href= '../MasukPage/Masuk.html'"
+      >
+        Masuk
+      </button>
+      <button
+        class="btn btn-daftar"
+        onClick="location.href='../DaftarPage/Daftar.html'"
+      >
+        Daftar
+      </button>
+      <form class="header-cari">
+        <input type="text" placeholder="Cari disini..." />
+        <button>CARI</button>
+      </form>
     </header>
     <div class="pembatas"></div>
 
     <main>
-        <div class="judul">
-            <h1>Detail Alamat</h1>
-        </div>
+      <div class="judul">
+        <h1>Detail Alamat</h1>
+      </div>
 
-        <div class="container">
-            <h3>Nama Penerima</h3>
-            <input type="text" placeholder="Nama">
-        </div>
+      <div class="container">
+        <h3>Nama Penerima</h3>
+        <input type="text" placeholder="Nama" />
+      </div>
 
-        <div class="container">
-            <h3>Nomor Hp</h3>
-            <input type="text" placeholder="No. Handphone">
-        </div>
+      <div class="container">
+        <h3>Nomor Hp</h3>
+        <input type="text" placeholder="No. Handphone" />
+      </div>
 
-        <div class="container">
-            <h3>Label Alamat</h3>
-            <input type="text" placeholder="Rumah">
-        </div>
+      <div class="container">
+        <h3>Label Alamat</h3>
+        <input type="text" placeholder="Rumah" />
+      </div>
 
-        <div class="container">
-            <input type="text" placeholder="Kota & Kecamatan">
-        </div>
+      <div class="container">
+        <input type="text" placeholder="Kota & Kecamatan" />
+      </div>
 
-        <div class="container">
-            <input type="text" placeholder="Alamat Lengkap">
-        </div>
+      <div class="container">
+        <input type="text" placeholder="Alamat Lengkap" />
+      </div>
 
-        <div class="container">
-            <input id="pesan" type="text" placeholder="Catatan Untuk Kurir (Opsional)">
-            <h5>Warna rumah, patokan, pesan khusus, dan lain-lain</h5>
-        </div>
+      <div class="container">
+        <input
+          id="pesan"
+          type="text"
+          placeholder="Catatan Untuk Kurir (Opsional)"
+        />
+        <h5>Warna rumah, patokan, pesan khusus, dan lain-lain</h5>
+      </div>
 
-        <div class="checker">
-            <input type="checkbox">
-            <h5>Jadikan alamat utama</h5>
-        </div>
+      <div class="checker">
+        <input id="checkbox" type="checkbox" onclick="check()" />
+        <h5>Jadikan alamat utama</h5>
+      </div>
 
-        <button onclick="window.location.href='../Checkout/checkout.html'">
-            <h2>Simpan</h2>
-        </button>
+      <div class="alamat">
+        <p id="alamat"></p>
+      </div>
 
+      <button onclick="window.location.href='../Checkout/checkout.html'">
+        <h2>Simpan</h2>
+      </button>
     </main>
-</body>
+
+    <script>
+      function check() {
+        var y = document.getElementById("checkbox");
+
+        if (y.checked == 1) {
+          document.getElementById("alamat").innerHTML =
+            "Alamat anda sudah disimpan menjadi alamat utama";
+        } else {
+          document.getElementById("alamat").innerHTML = "";
+        }
+      }
+    </script>
+  </body>
 </html>

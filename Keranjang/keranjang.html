@@ -52,13 +52,13 @@
                         </div>
                         <div class="produk-amount">
                             <div class="jumlah">
-                                <div class="plusminus">
+                                <div class="plusminus minus">
                                     <img src="../ImageBank/minus-solid.svg" alt="">
                                 </div>
                                 <div class="value">
-                                    <p>1</p>
+                                    <p class="amount xiaomi-amount">0</p>
                                 </div>
-                                <div class="plusminus">
+                                <div class="plusminus plus">
                                     <img src="../ImageBank/plus-solid.svg" alt="">
                                 </div>
                             </div>
@@ -84,13 +84,13 @@
                         </div>
                         <div class="produk-amount">
                             <div class="jumlah">
-                                <div class="plusminus">
+                                <div class="plusminus minus">
                                     <img src="../ImageBank/minus-solid.svg" alt="">
                                 </div>
                                 <div class="value">
-                                    <p>1</p>
+                                    <p class="amount rexus-amount">0</p>
                                 </div>
-                                <div class="plusminus">
+                                <div class="plusminus plus">
                                     <img src="../ImageBank/plus-solid.svg" alt="">
                                 </div>
                             </div>
@@ -106,22 +106,23 @@
             <div class="keranjang-bayar">
                 <h2>Pembelian</h2>
                 <div>
-                    <div>Total Harga (0 Barang)</div>
-                    <div class="harga">Rp0</div>
+                    <div>Total Harga (<span class="recap-amount totalXiaomi">0</span> Barang)</div>
+                    <div class="harga">Rp<span class="recap-harga hargaXiaomi">0</span></div>
                 </div>
                 <div>
-                    <div>Total Harga (0 Barang)</div>
-                    <div class="harga">Rp0</div>
+                    <div>Total Harga (<span class="recap-amount totalRexus">0</span> Barang)</div>
+                    <div class="harga">Rp<span class="recap-harga hargaRexus">0</span></div>
                 </div>
                 <div class="grand-total">
                     <span>Total</span>
-                    <span>Rp.0</span>
+                    <span>Rp<span class="grandTotal">0</span></span>
                 </div>
                 <button onclick="location.href='../Pembayaran/pembayaran.html'" class="keranjang-beli">
-                    Beli(0)
+                    Beli
                 </button>
             </div>
         </div>
     </main>
+    <script src="./keranjang.js"></script>
 </body>
 </html>

@@ -102,6 +102,10 @@ main{
     margin : 20px auto;
 }
 
+.penawaran-lists a:not(.active){
+    display : none;
+}
+
 .penawaran-list{
     display : flex;
     flex-direction: column;
@@ -115,6 +119,7 @@ main{
     transition : .3s;
     justify-content: center;
 }
+
 
 .penawaran-list:hover{
     transform : scale(1.05);
@@ -184,7 +189,7 @@ main{
      transform : scale(1.1);
 }
 
-.penawaran-btn-back{
+.penawaran-btn-prev{
     left : -10%;
 }
  
