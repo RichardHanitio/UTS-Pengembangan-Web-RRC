@@ -11,6 +11,7 @@
     <title>Wijaya Store | Masuk</title>
     <link rel="icon" type="image/png" href="../ImageBank/logo.png">
 </head>
+
 <body>
     <div class="container">
         <div class="container-top">
@@ -18,7 +19,7 @@
                 <p>Masuk</p>
             </div>
         </div>
-        <form action="">
+        <form action="/index.html" id="form">
             <div class="image-container">
                 <img src="../ImageBank/logo.png" alt="">
             </div>
@@ -26,21 +27,58 @@
             <ul>
                 <li>
                     <label for="">Username</label>
-                    <input type="text">
+                    <input type="text" id="username">
                 </li>
                 <li>
                     <label for="">Password</label>
-                    <input type="password">
+                    <input type="password" id="password">
+                </li>
+                <li id="wrong">
+
                 </li>
                 <li id="check">
-                    <input type="checkbox" id="checkbox">
+                    <input type="checkbox" id="checkbox" onclick="showPassword()">
                     <label for="checkbox">Show password</label>
                 </li>
+
                 <li>
-                    <button type="submit" formaction="../index.html">Masuk</button>
+                    <button type="submit">Masuk</button>
                 </li>
             </ul>
         </form>
     </div>
+
+
+    <script>
+        var f = document.getElementById("form")
+
+        function showPassword(){
+            var x = document.getElementById("password");
+            var y = document.getElementById("checkbox");
+
+            if(y.checked == 1){
+                x.type = "text";
+            }
+            else{
+                x.type = "password";
+            }
+        }
+
+        f.addEventListener('submit', (sub)=>{
+            var x = document.getElementById("username").value;
+            var y = document.getElementById("password").value;
+            var z = document.getElementById("wrong");
+
+            console.log(x);
+            console.log(y)
+            if(x == "admin" && y == "admin"){
+                console.log("Triggered")
+            }
+            else{
+                z.innerText = "Username or password is wrong !"
+                sub.preventDefault()
+            }
+        })
+    </script>
 </body>
 </html>

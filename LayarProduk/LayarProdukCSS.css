@@ -38,7 +38,6 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
 
 .left .top {
@@ -63,7 +62,6 @@ main{
     flex-direction: column;
     position: sticky;
     top: 150px;
-   
 }
 
 

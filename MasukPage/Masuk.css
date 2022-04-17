@@ -105,3 +105,8 @@ form ul li button:hover{
     cursor: pointer;
     background-color: #000046;
 }
+
+#wrong{
+    color: red;
+    font-size: 12px;
+}
