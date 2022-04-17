@@ -82,12 +82,12 @@
         <div class="penawaran-spesial">
             <h2 class="penawaran-title">Penawaran Spesial Hanya Untuk Anda</h2>
             
-            <button class="penawaran-btn penawaran-btn-back">
+            <button class="penawaran-btn penawaran-btn-prev" onclick="prevSlide()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                 </svg>
             </button>
-            <button class="penawaran-btn penawaran-btn-next">
+            <button class="penawaran-btn penawaran-btn-next" onclick="nextSlide()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
@@ -95,8 +95,7 @@
 
 
             <div class="penawaran-lists">
-                <a href="LayarProduk/LayarProdukPage.html">
-                <div class="penawaran-list">
+                <a class="penawaran-list active" href="LayarProduk/LayarProdukPage.html">
                     <img src="ImageBank/xiaomi.png" alt="" class="penawaran-image">
                     <div class="penawaran-desc">
                         <div class="penawaran-product">Xiaomi Poco X3 Pro</div>
@@ -108,10 +107,8 @@
                         </div>
                         <div class="penawaran-stok">Stok 5</div>
                     </div>
-                </div>
                 </a>
-                <a href="LayarProduk/LayarProdukPage.html">
-                <div class="penawaran-list">
+                <a class="penawaran-list active" href="LayarProduk/LayarProdukPage.html">
                     <img src="ImageBank/rexus.png" alt="" class="penawaran-image">
                     <div class="penawaran-desc">
                         <div class="penawaran-product">Rexus Daxa TS1</div>
@@ -123,10 +120,8 @@
                         </div>
                         <div class="penawaran-stok">Stok 10</div>
                     </div>
-                </div>
                 </a>
-                <a href="LayarProduk/LayarProdukPage.html">
-                <div class="penawaran-list">
+                <a class="penawaran-list active" href="LayarProduk/LayarProdukPage.html">
                     <img src="ImageBank/AC.png" alt="" class="penawaran-image">
                     <div class="penawaran-desc">
                         <div class="penawaran-product">AC Portable Arctic</div>
@@ -138,7 +133,48 @@
                         </div>
                         <div class="penawaran-stok">Stok 50</div>
                     </div>
-                </div>
+                </a>
+
+                <a class="penawaran-list" href="LayarProduk/LayarProdukPage.html">
+                    <img src="ImageBank/headsetpromo.png" alt="" class="penawaran-image">
+                    <div class="penawaran-desc">
+                        <div class="penawaran-product">Logitech G533</div>
+                        <div class="penawaran-kategori">Audio</div>
+                        <div class="penawaran-harga">Rp60.000</div>
+                        <div class="penawaran-discount">
+                            <span>50%</span>
+                            <span>Rp120.000</span>
+                        </div>
+                        <div class="penawaran-stok">Stok 15</div>
+                    </div>
+                </a>
+
+                <a class="penawaran-list" href="LayarProduk/LayarProdukPage.html">
+                    <img src="ImageBank/kipaspromo.jpg" alt="" class="penawaran-image">
+                    <div class="penawaran-desc">
+                        <div class="penawaran-product">Portable Fan</div>
+                        <div class="penawaran-kategori">Alat Pendingin Ruangan</div>
+                        <div class="penawaran-harga">Rp30.000</div>
+                        <div class="penawaran-discount">
+                            <span>50%</span>
+                            <span>Rp60.000</span>
+                        </div>
+                        <div class="penawaran-stok">Stok 20</div>
+                    </div>
+                </a>
+
+                <a class="penawaran-list" href="LayarProduk/LayarProdukPage.html">
+                    <img src="ImageBank/realmepromo.png" alt="" class="penawaran-image">
+                    <div class="penawaran-desc">
+                        <div class="penawaran-product">Realme Neo GT 2</div>
+                        <div class="penawaran-kategori">Handphone</div>
+                        <div class="penawaran-harga">Rp71.900</div>
+                        <div class="penawaran-discount">
+                            <span>50%</span>
+                            <span>Rp1.438.000</span>
+                        </div>
+                        <div class="penawaran-stok">Stok 50</div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -203,5 +239,8 @@
             </ul>
         </div>
     </footer>
+
+    
+    <script src="script.js" defer></script>
 </body>
 </html>
