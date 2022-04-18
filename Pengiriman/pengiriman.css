@@ -45,7 +45,7 @@ body{
     height: 150px;
 }
 
-.penawaran-btn:hover{
+.pengiriman-btn:hover{
     box-shadow : 2px 3px 5px rgba(125, 125, 125, 0.7);
     transform : scale(1.1);
 }

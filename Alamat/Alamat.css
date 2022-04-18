@@ -19,8 +19,8 @@ main{
     width: 70%;
     display: flex;
     flex-direction: column;
-    margin: 30px auto 0 ;
     background-color: white;
+    margin : 30px auto 0;
 }
 
 .judul{
@@ -34,32 +34,21 @@ main{
     height: 70px;
 }
 
-.container{
-    box-sizing: border-box;
-    padding: 30px;
-}
-
-.container h3{
-    padding-bottom: 20px;
-}
 
 .container input{
     box-sizing: border-box;
     width: 100%;
-    height: 10vh;
+    height: 7vh;
     border: none;
     border-bottom: solid #e4e4e4;
-    padding: 10px;
+    margin : 10px 0 25px;
+    padding : 0 10px;
 }
 
-#pesan{
-    margin-bottom: 10px;
-}
 
 .checker{
     display: flex;
     align-items: center;
-    padding: 0 30px;
     height: 10vh;
     margin-top: 30px;
 }
@@ -67,18 +56,19 @@ main{
 .checker input{
     height: 3vh;
     width: 3vh;
-    margin-right: 10px;
+    margin-right : 10px;
 }
 
 .alamat {
     box-sizing: border-box;
-    margin-left: 70px;
-    margin-bottom: 30px;
+}
+
+form {
+    margin : 20px;
 }
 
 button{
     display: flex;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -86,7 +76,6 @@ button{
     background-color: var(--clr-primary-2);
     color: white;
     font-weight: bold;
-    margin-bottom: 30px;
     border: none;
 }
 

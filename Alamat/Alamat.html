@@ -16,6 +16,7 @@
     <title>Wijaya Store | Alamat</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <img src="../ImageBank/logo.png" alt="" class="header-logo" />
       <h3 class="header-name">WIJAYA STORE</h3>
@@ -46,68 +47,56 @@
     </header>
     <div class="pembatas"></div>
 
+    <!-- main -->
     <main>
       <div class="judul">
         <h1>Detail Alamat</h1>
       </div>
 
-      <div class="container">
-        <h3>Nama Penerima</h3>
-        <input type="text" placeholder="Nama" />
-      </div>
+      <form action="../Checkout/checkout.html">
+        <label class="container">
+          <h3>Nama Penerima</h3>
+          <input type="text" placeholder="Nama" required/>
+        </label>
 
-      <div class="container">
-        <h3>Nomor Hp</h3>
-        <input type="text" placeholder="No. Handphone" />
-      </div>
+        <label class="container">
+          <h3>Nomor Hp</h3>
+          <input type="tel" placeholder="No. Handphone" maxlength="12" required/>
+        </label>
 
-      <div class="container">
-        <h3>Label Alamat</h3>
-        <input type="text" placeholder="Rumah" />
-      </div>
+        <label class="container">
+          <h3>Label Alamat</h3>
+          <input type="text" placeholder="Rumah" required/>
+          <input type="text" placeholder="Kota & Kecamatan" required/>
+          <input type="text" placeholder="Alamat Lengkap" required/>
+        </label>
 
-      <div class="container">
-        <input type="text" placeholder="Kota & Kecamatan" />
-      </div>
+        <label class="container">
+          <input
+            id="pesan"
+            type="text"
+            placeholder="Catatan Untuk Kurir (Opsional)"
+            required
+          />
+          <h5>Warna rumah, patokan, pesan khusus, dan lain-lain</h5>
+        </label>
 
-      <div class="container">
-        <input type="text" placeholder="Alamat Lengkap" />
-      </div>
+        <label class="checker">
+          <input id="checkbox" type="checkbox" onclick="check()" required/>
+          <h5>Jadikan alamat utama</h5>
+        </label>
 
-      <div class="container">
-        <input
-          id="pesan"
-          type="text"
-          placeholder="Catatan Untuk Kurir (Opsional)"
-        />
-        <h5>Warna rumah, patokan, pesan khusus, dan lain-lain</h5>
-      </div>
+        <label class="alamat">
+          <p id="alamat"></p>
+        </label>
 
-      <div class="checker">
-        <input id="checkbox" type="checkbox" onclick="check()" />
-        <h5>Jadikan alamat utama</h5>
-      </div>
-
-      <div class="alamat">
-        <p id="alamat"></p>
-      </div>
-
-      <button onclick="window.location.href='../Checkout/checkout.html'">
-        <h2>Simpan</h2>
-      </button>
+        <button type="submit">
+          <h2>Simpan</h2>
+        </button>
+      </form>
+      
     </main>
 
-    <script>
-      function check() {
-        var y = document.getElementById("checkbox");
-
-        if (y.checked == 1) {
-          document.getElementById("alamat").innerHTML =
-            "Alamat anda sudah disimpan menjadi alamat utama";
-        } else {
-          document.getElementById("alamat").innerHTML = "";
-        }
-      }
-    </script>
+    <script src="./Alamat.js"></script>
   </body>
 </html>

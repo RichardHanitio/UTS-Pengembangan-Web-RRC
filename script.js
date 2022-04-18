@@ -10,14 +10,14 @@ let currIndex = 0;
 
 
 function startAnimation() {
-    for(let i=0; i<arrSlides.length-1; i++) {
+    for(let i=0; i<arrSlides.length; i++) {
         arrSlides[i].style.transform = "scale(0)";
     }
     setTimeout(() => {
-        for (let i = 0; i < arrSlides.length - 1; i++) {
+        for (let i = 0; i < arrSlides.length; i++) {
             arrSlides[i].style.transform = "scale(1)";
         }
-    }, 100);
+    }, 200);
 }
 
 function nextSlide(){

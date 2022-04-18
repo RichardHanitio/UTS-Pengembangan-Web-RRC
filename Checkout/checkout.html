@@ -51,13 +51,13 @@
                         </div>
                         <div class="produk-amount">
                             <div class="jumlah">
-                                <div class="plusminus">
+                                <div class="plusminus" onclick="decrement()">
                                     <img src="../ImageBank/minus-solid.svg" alt="">
                                 </div>
                                 <div class="value">
-                                    <p>1</p>
+                                    <p class="amount">1</p>
                                 </div>
-                                <div class="plusminus">
+                                <div class="plusminus" onclick="increment()">
                                     <img src="../ImageBank/plus-solid.svg" alt="">
                                 </div>
                             </div>
@@ -140,7 +140,7 @@
                         <div class="left">
                             <div class="biaya">
                                 <p class="p2">Total Bayar</p>
-                                <h3>Rp.157.000</h3>
+                                <h3>Rp.<span class="harga">157.000</span></h3>
                             </div>
                         </div>
         
@@ -154,5 +154,7 @@
             </div>
         </div>
     </main>
+
+    <script src="./checkout.js"></script>
 </body>
 </html>

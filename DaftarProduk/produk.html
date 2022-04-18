@@ -37,12 +37,12 @@
     <div class="penawaran-spesial">
         <h1 class="penawaran-title">Handphone</h1>
         
-        <button class="penawaran-btn penawaran-btn-back">
+        <button class="penawaran-btn penawaran-btn-prev" onclick="prevSlide()">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
         </button>
-        <button class="penawaran-btn penawaran-btn-next">
+        <button class="penawaran-btn penawaran-btn-next" onclick="nextSlide()">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
             </svg>
@@ -50,8 +50,7 @@
 
         <h2 class="produk-terlaris">Produk Terlaris</h2>
         <div class="penawaran-lists">
-            <a href="../LayarProduk/LayarProdukPage.html">
-            <div class="penawaran-list">
+            <a href="../LayarProduk/LayarProdukPage.html" class="penawaran-list-1 active">
                 <img src="../ImageBank/xiaomi.png" alt="" class="penawaran-image">
                 <div class="penawaran-desc">
                     <div class="penawaran-product">Xiaomi Poco X3 Pro</div>
@@ -63,11 +62,9 @@
                     </div>
                     <div class="penawaran-stok">Stok 5</div>
                 </div>
-            </div>
             </a>
 
-            <a href="../LayarProduk/LayarProdukPage.html">
-            <div class="penawaran-list">
+            <a href="../LayarProduk/LayarProdukPage.html" class="penawaran-list-1 active">
                 <img src="../ImageBank/realmext.png" alt="" class="penawaran-image">
                 <div class="penawaran-desc">
                     <div class="penawaran-product">Realme XT</div>
@@ -79,11 +76,9 @@
                     </div>
                     <div class="penawaran-stok">Stok 10</div>
                 </div>
-            </div>
             </a>
 
-            <a href="../LayarProduk/LayarProdukPage.html">
-            <div class="penawaran-list">
+            <a href="../LayarProduk/LayarProdukPage.html" class="penawaran-list-1 active">
                 <img src="../ImageBank/redminote10s.png" alt="" class="penawaran-image">
                 <div class="penawaran-desc">
                     <div class="penawaran-product">Xiaomi Redmi Note 10S</div>
@@ -95,7 +90,48 @@
                     </div>
                     <div class="penawaran-stok">Stok 50</div>
                 </div>
-            </div>
+            </a>
+
+            <a href="../LayarProduk/LayarProdukPage.html" class="penawaran-list-1">
+                <img src="../ImageBank/xiaomi.png" alt="" class="penawaran-image">
+                <div class="penawaran-desc">
+                    <div class="penawaran-product">Xiaomi Poco X3 Pro</div>
+                    <div class="penawaran-kategori">Handphone</div>
+                    <div class="penawaran-harga">Rp4.059.000</div>
+                    <div class="penawaran-discount">
+                        <span>50%</span>
+                        <span>Rp8.118.000</span>
+                    </div>
+                    <div class="penawaran-stok">Stok 5</div>
+                </div>
+            </a>
+
+            <a href="../LayarProduk/LayarProdukPage.html" class="penawaran-list-1">
+                <img src="../ImageBank/realmext.png" alt="" class="penawaran-image">
+                <div class="penawaran-desc">
+                    <div class="penawaran-product">Realme XT</div>
+                    <div class="penawaran-kategori">Handphone</div>
+                    <div class="penawaran-harga">Rp3.099.900</div>
+                    <div class="penawaran-discount">
+                        <span>50%</span>
+                        <span>Rp6.199.800</span>
+                    </div>
+                    <div class="penawaran-stok">Stok 10</div>
+                </div>
+            </a>
+
+            <a href="../LayarProduk/LayarProdukPage.html" class="penawaran-list-1">
+                <img src="../ImageBank/redminote10s.png" alt="" class="penawaran-image">
+                <div class="penawaran-desc">
+                    <div class="penawaran-product">Xiaomi Redmi Note 10S</div>
+                    <div class="penawaran-kategori">Handphone</div>
+                    <div class="penawaran-harga">Rp3.049.000</div>
+                    <div class="penawaran-discount">
+                        <span>8%</span>
+                        <span>Rp3.299.000</span>
+                    </div>
+                    <div class="penawaran-stok">Stok 50</div>
+                </div>
             </a>
         </div>
     </div>
@@ -260,5 +296,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./produk.js"></script>
 </body>
 </html>
